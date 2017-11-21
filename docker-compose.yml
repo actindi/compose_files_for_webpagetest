@@ -19,7 +19,6 @@ services:
     image: webpagetest/agent:cjk
     environment:
       SERVER_URL: http://wpt_server/work/
-      LOCATION: Test
-      SHAPER: none
+      LOCATION: Linux
     depends_on:
       - wpt_server
