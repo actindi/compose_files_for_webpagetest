@@ -28,4 +28,4 @@ Access to http://localhost:4000.
 You can watch the Installation Check page.
 
 ### Test test results
-Test results are saved in `results` directory.
+Test results are saved in `wpt_data` directory.

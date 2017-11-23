@@ -1,4 +1,6 @@
 .DS_Store
 
-/results/*
-!/results/.keep
+/wpt_data/dat/*
+/wpt_data/logs/*
+/wpt_data/results/*
+!/wpt_data/**/.keep
