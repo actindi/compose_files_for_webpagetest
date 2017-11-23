@@ -10,6 +10,7 @@ services:
     volumes:
       - ./wpt-server/settings/locations.ini:/var/www/html/settings/locations.ini
       - ./wpt-server/settings/settings.ini:/var/www/html/settings/settings.ini
+      - ./results:/var/www/html/results
     ports:
       - 4000:80
   wpt_agent:
