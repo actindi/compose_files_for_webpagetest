@@ -9,15 +9,18 @@ Docker Compose files for private [WebPagetest](https://www.webpagetest.org/) ins
 #### On Linux Server
 
 Run the following commands, and access to http://localhost:4000
+
 ```bash
 sudo modprobe ifb numifbs=1
 docker-compose up
 ```
 
-#### On MacOS PC
-** MacOS does not support network shaping. **
+#### On Mac OS PC
+
+**Mac OS does not support network shaping.**
 
 Run the following command, and access to http://localhost:4000
+
 ```bash
 docker-compose -f docker-compose.yml -f docker-compose-macos.yml up
 ```
@@ -28,4 +31,9 @@ Access to http://localhost:4000.
 You can watch the Installation Check page.
 
 ### Test test results
+
 Test results are saved in `wpt_data` directory.
+
+## License
+
+[MIT](LICENSE)

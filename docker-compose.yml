@@ -1,4 +1,4 @@
-version: "2"
+version: "2.2"
 services:
   wpt_server:
     #### python-ssim をインストールしたいが、エラーになるので保留
@@ -20,6 +20,7 @@ services:
       context: .
       dockerfile: ./wpt-agent/Dockerfile
     image: webpagetest/agent:cjk
+    init: true
     environment:
       SERVER_URL: http://wpt_server/work/
       LOCATION: Linux
